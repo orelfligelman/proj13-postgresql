@@ -1,0 +1,12 @@
+  [1m[36m (121.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (18.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (12.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBooks (20141210193150)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (40.6ms)[0m  [1mCREATE TABLE "books" ("id" serial primary key, "access_no" integer, "title" character varying(255), "edition" integer, "publisher" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (21.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141210193150"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
